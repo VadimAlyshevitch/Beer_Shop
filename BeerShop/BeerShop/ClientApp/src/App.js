@@ -1,20 +1,29 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router';
-import { Layout } from './components/Layout';
-import { Home } from './components/Home';
-import { FetchData } from './components/FetchData';
-import { Counter } from './components/Counter';
+import { Topmenu } from './components/menu/topmenu';
+import { Content } from './components/Content';
+import { Main } from './components/Main'
+import { Shop } from './components/Shop'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 export default class App extends Component {
   displayName = App.name
 
   render() {
-    return (
-      <Layout>
-        <Route exact path='/' component={Home} />
-        <Route path='/counter' component={Counter} />
-        <Route path='/fetchdata' component={FetchData} />
-      </Layout>
+      return (
+          <div className="container">
+             
+               <Router>
+                  <div>
+                      <Topmenu />
+                      <Route exact path='/' component={Main} />
+                      <Route path='/shop' component={Shop} />
+                  </div>
+              </Router>
+          </div>
+
+        
+    
     );
   }
 }
+
