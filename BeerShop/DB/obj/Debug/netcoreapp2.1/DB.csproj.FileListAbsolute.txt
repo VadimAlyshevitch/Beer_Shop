@@ -1,0 +1,14 @@
+D:\projects\BeerShop\BeerShop\DB\bin\Debug\netcoreapp2.1\Models.dll
+D:\projects\BeerShop\BeerShop\DB\obj\Debug\netcoreapp2.1\DB.csproj.CoreCompileInputs.cache
+D:\projects\BeerShop\BeerShop\DB\obj\Debug\netcoreapp2.1\DB.AssemblyInfoInputs.cache
+D:\projects\BeerShop\BeerShop\DB\obj\Debug\netcoreapp2.1\DB.AssemblyInfo.cs
+D:\projects\BeerShop\BeerShop\DB\obj\Debug\netcoreapp2.1\DB.csprojAssemblyReference.cache
+D:\projects\BeerShop\BeerShop\DB\bin\Debug\netcoreapp2.1\DB.deps.json
+D:\projects\BeerShop\BeerShop\DB\bin\Debug\netcoreapp2.1\DB.runtimeconfig.json
+D:\projects\BeerShop\BeerShop\DB\bin\Debug\netcoreapp2.1\DB.runtimeconfig.dev.json
+D:\projects\BeerShop\BeerShop\DB\bin\Debug\netcoreapp2.1\DB.dll
+D:\projects\BeerShop\BeerShop\DB\bin\Debug\netcoreapp2.1\DB.pdb
+D:\projects\BeerShop\BeerShop\DB\bin\Debug\netcoreapp2.1\Models.pdb
+D:\projects\BeerShop\BeerShop\DB\obj\Debug\netcoreapp2.1\DB.csproj.CopyComplete
+D:\projects\BeerShop\BeerShop\DB\obj\Debug\netcoreapp2.1\DB.dll
+D:\projects\BeerShop\BeerShop\DB\obj\Debug\netcoreapp2.1\DB.pdb

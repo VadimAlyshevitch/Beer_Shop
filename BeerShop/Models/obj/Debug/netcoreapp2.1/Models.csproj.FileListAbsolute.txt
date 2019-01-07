@@ -1,0 +1,9 @@
+D:\projects\BeerShop\BeerShop\Models\bin\Debug\netcoreapp2.1\Models.deps.json
+D:\projects\BeerShop\BeerShop\Models\bin\Debug\netcoreapp2.1\Models.dll
+D:\projects\BeerShop\BeerShop\Models\bin\Debug\netcoreapp2.1\Models.pdb
+D:\projects\BeerShop\BeerShop\Models\obj\Debug\netcoreapp2.1\Models.csprojAssemblyReference.cache
+D:\projects\BeerShop\BeerShop\Models\obj\Debug\netcoreapp2.1\Models.csproj.CoreCompileInputs.cache
+D:\projects\BeerShop\BeerShop\Models\obj\Debug\netcoreapp2.1\Models.AssemblyInfoInputs.cache
+D:\projects\BeerShop\BeerShop\Models\obj\Debug\netcoreapp2.1\Models.AssemblyInfo.cs
+D:\projects\BeerShop\BeerShop\Models\obj\Debug\netcoreapp2.1\Models.dll
+D:\projects\BeerShop\BeerShop\Models\obj\Debug\netcoreapp2.1\Models.pdb
