@@ -17,7 +17,7 @@ namespace BeerShop.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=DMITRYPC;Database=beer_shop;Trusted_Connection=True;");
+            optionsBuilder.UseSqlServer("Server=LAPTOP-26LD6EBU;Database=beer_shop;Trusted_Connection=True;");
         }
     }
 }

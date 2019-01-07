@@ -22,7 +22,7 @@ namespace BeerShop
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            var connection = @"Server=DMITRYPC;Database=beer_shop;Trusted_Connection=True;ConnectRetryCount=0";
+            var connection = @"Server=LAPTOP-26LD6EBU;Database=beer_shop;Trusted_Connection=True;ConnectRetryCount=0";
             services.AddDbContext<ApplicationContext>
                 (options => options.UseSqlServer(connection));
 

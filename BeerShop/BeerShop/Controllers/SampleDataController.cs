@@ -10,31 +10,27 @@ namespace BeerShop.Controllers
     [Route("api/beer")]
     public class BeerController : Controller
     {
-        private static string[] Beers = new[]
-        {
-            "Оболонь", "Балтика", "Арсенальное", "Жигуль", "Козел", "Охота", "Туборг", "Бад", "Гараж", "Куллер"
-        };
 
-        [HttpGet("isExists")]
-        public IActionResult IsExists(string beerTitle)
+        ApplicationContext db;
+        public BeerController(ApplicationContext context)
         {
-
-            bool isExists = Beers.Contains(beerTitle);
-            return Json(new
-            {
-                result = isExists
-            });
+            db = context;
         }
 
-        //[HttpGet("count")]
-        //public IActionResult GetCount()
-        //{
-        //    using (ApplicationContext db = new ApplicationContext())
-        //    {
-        //        int count = db.Beers.Where(b => b.Id > 0).Count();
-
-        //        return Ok(count);
-        //    }
-        //}
+        [HttpGet("init")]
+        public IActionResult GetCount()
+        {
+            Beer beer = new Beer()
+            {
+                Name = "Балтика",
+                Alcohol = 4.7,
+                DateCreate = DateTime.Now,
+                Price = 69,
+                Count = 144
+            };
+            db.Beers.Add(beer);
+            db.SaveChanges();
+            return Ok();
+        }
     }
 }
