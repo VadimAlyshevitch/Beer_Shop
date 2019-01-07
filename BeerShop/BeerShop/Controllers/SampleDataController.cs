@@ -6,39 +6,39 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BeerShop.Controllers
 {
-    [Route("api/[controller]")]
-    public class SampleDataController : Controller
+    [Route("api/beer")]
+    public class BeerController : Controller
     {
-        private static string[] Summaries = new[]
+        //private static string[] Summaries = new[]
+        //{
+        //    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+        //};
+
+        //[HttpGet("[action]")]
+        //public IEnumerable<WeatherForecast> WeatherForecasts()
+        //{
+        //    var rng = new Random();
+        //    return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+        //    {
+        //        DateFormatted = DateTime.Now.AddDays(index).ToString("d"),
+        //        TemperatureC = rng.Next(-20, 55),
+        //        Summary = Summaries[rng.Next(Summaries.Length)]
+        //    });
+        //}
+        private static string[] Beers = new[]
         {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+            "Оболонь", "Балтика", "Арсенальное", "Жигуль", "Козел", "Охота", "Туборг", "Бад", "Гараж", "Куллер"
         };
 
-        [HttpGet("[action]")]
-        public IEnumerable<WeatherForecast> WeatherForecasts()
+        [HttpGet("isExists")]
+        public IActionResult IsExists(string beerTitle)
         {
-            var rng = new Random();
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+            
+            bool isExists = Beers.Contains(beerTitle);
+            return Json(new
             {
-                DateFormatted = DateTime.Now.AddDays(index).ToString("d"),
-                TemperatureC = rng.Next(-20, 55),
-                Summary = Summaries[rng.Next(Summaries.Length)]
+                result = isExists
             });
-        }
-
-        public class WeatherForecast
-        {
-            public string DateFormatted { get; set; }
-            public int TemperatureC { get; set; }
-            public string Summary { get; set; }
-
-            public int TemperatureF
-            {
-                get
-                {
-                    return 32 + (int)(TemperatureC / 0.5556);
-                }
-            }
         }
     }
 }
