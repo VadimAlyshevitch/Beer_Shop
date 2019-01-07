@@ -6,8 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BeerShop.Controllers
 {
-    [Route("api/[controller]")]
-    public class SampleDataController : Controller
+    [Route("api/beer")]
+    public class BeerController : Controller
     {
         //private static string[] Summaries = new[]
         //{
@@ -25,8 +25,20 @@ namespace BeerShop.Controllers
         //        Summary = Summaries[rng.Next(Summaries.Length)]
         //    });
         //}
+        private static string[] Beers = new[]
+        {
+            "Оболонь", "Балтика", "Арсенальное", "Жигуль", "Козел", "Охота", "Туборг", "Бад", "Гараж", "Куллер"
+        };
 
-        //[HttpGet("Beer")]
-        //public IActionResult
+        [HttpGet("isExists")]
+        public IActionResult IsExists(string beerTitle)
+        {
+            
+            bool isExists = Beers.Contains(beerTitle);
+            return Json(new
+            {
+                result = isExists
+            });
+        }
     }
 }
